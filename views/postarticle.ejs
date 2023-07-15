@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<div class="container">
+    <h2>Write Article</h2>
+    <form class="form" action="/post-form" method="post">
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" placeholder="Article Title">
+    </div>
+    <div class="mb-3">
+        <textarea name="content" cols="30" rows="10" class="form-control" placeholder="Write Content"></textarea>
+    </div>
+    <div class="mb">
+        <input type="submit" class="btn btn-primary d-block ms-auto" value="Post Article">
+    </div>
+</div>
+</form>
+
+
+<%- include('partials/footer') %>

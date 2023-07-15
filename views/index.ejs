@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+    <%-include('partials/navbar')%>
+        <h1>Welcome to index</h1>
+        <img src="images/banner.jpg" class="w-100" alt="">
+
+        <div class="container">
+            <div class="row">
+                <% article.forEach((article)=>{ %>
+                    <div class="col-4">
+                        <h1><%- article.title %></h1>
+                        <p><%- article.content %></p>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+        <%- include('partials/footer') %>
